@@ -1,0 +1,70 @@
+Index: _2_applicationCode/src/Main_GUI.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import javax.swing.*;\r\nimport java.awt.*;\r\nimport java.awt.event.ActionEvent;\r\nimport java.awt.event.ActionListener;\r\npublic class Main_GUI extends JFrame {\r\n\r\n    private final JButton[][] buttons = new JButton[8][8];\r\n\r\n    public Main_GUI() {\r\n        setTitle(\"Chess\");\r\n        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);\r\n        setLayout(new GridLayout(9, 9)); // 8x8 Felder plus Beschriftung\r\n\r\n        add(new JLabel(String.valueOf(\"\"), SwingConstants.CENTER));\r\n        // Erstelle Beschriftung (Buchstaben A-H)\r\n        for (char c = 'A'; c <= 'H'; c++) {\r\n            add(new JLabel(String.valueOf(c), SwingConstants.CENTER));\r\n        }\r\n\r\n        // Erstelle Felder und Beschriftung (Zahlen 1-8)\r\n        for (int i = 0; i < 8; i++) {\r\n            add(new JLabel(String.valueOf(8 - i), SwingConstants.CENTER));\r\n            for (int j = 0; j < 8; j++) {\r\n                JButton button = new JButton();\r\n                button.setPreferredSize(new Dimension(60, 60)); // Größe der Felder\r\n                buttons[i][j] = button;\r\n                add(button);\r\n                final int row = i;\r\n                final int col = j;\r\n                button.addActionListener(new ActionListener() {\r\n                    @Override\r\n                    public void actionPerformed(ActionEvent e) {\r\n                        // Hier kannst du deine Aktionen einfügen, wenn ein Feld geklickt wird\r\n                        System.out.println(\"Button geklickt: \" + (char) ('A' + col) + (8 - row));\r\n                    }\r\n                });\r\n\r\n                if ((i + j) % 2 == 0) {\r\n                    button.setBackground(Color.WHITE);\r\n                } else {\r\n                    button.setBackground(Color.BLACK);\r\n                }\r\n            }\r\n        }\r\n\r\n        pack();\r\n        setLocationRelativeTo(null); // Zentriere das Fenster\r\n        setVisible(true);\r\n    }\r\n\r\n    public static void main(String[] args) {\r\n        SwingUtilities.invokeLater(new Runnable() {\r\n            public void run() {\r\n                new Main_GUI();\r\n            }\r\n        });\r\n    }\r\n\r\n}\r\n
+===================================================================
+diff --git a/_2_applicationCode/src/Main_GUI.java b/_2_applicationCode/src/Main_GUI.java
+--- a/_2_applicationCode/src/Main_GUI.java	
++++ b/_2_applicationCode/src/Main_GUI.java	
+@@ -3,7 +3,6 @@
+ import java.awt.event.ActionEvent;
+ import java.awt.event.ActionListener;
+ public class Main_GUI extends JFrame {
+-
+     private final JButton[][] buttons = new JButton[8][8];
+ 
+     public Main_GUI() {
+@@ -21,8 +20,11 @@
+         for (int i = 0; i < 8; i++) {
+             add(new JLabel(String.valueOf(8 - i), SwingConstants.CENTER));
+             for (int j = 0; j < 8; j++) {
++                Icon icon = new ImageIcon("/Bauer_Schwarz.png");
+                 JButton button = new JButton();
+-                button.setPreferredSize(new Dimension(60, 60)); // Größe der Felder
++                button.setPreferredSize(new Dimension(90, 90)); // Größe der Felder
++                //Button Icon hinzufügen. Tut nicht. KP
++                button.setIcon(icon);
+                 buttons[i][j] = button;
+                 add(button);
+                 final int row = i;
+@@ -32,14 +34,18 @@
+                     public void actionPerformed(ActionEvent e) {
+                         // Hier kannst du deine Aktionen einfügen, wenn ein Feld geklickt wird
+                         System.out.println("Button geklickt: " + (char) ('A' + col) + (8 - row));
++                        if(button.isContentAreaFilled()){
++                            System.out.println(getName());
++                        }
+                     }
+                 });
+ 
+-                if ((i + j) % 2 == 0) {
++                /*if ((i + j) % 2 == 0) {
+                     button.setBackground(Color.WHITE);
+                 } else {
+                     button.setBackground(Color.BLACK);
+-                }
++                }*/
++
+             }
+         }
+ 
+@@ -48,6 +54,19 @@
+         setVisible(true);
+     }
+ 
++    public void erstellungButton(){
++        String[][] initialSetup = {
++                {"Turm_Schwarz.png", "Pferd_Schwarz.png", "Laeufer_Schwarz.png", "Dame_Schwarz.png", "Koenig_Schwarz.png", "Laeufer_Schwarz.png", "Pferd_Schwarz.png", "Turm_Schwarz.png"},
++                {"Bauer_Schwarz.png", "Bauer_Schwarz.png", "Bauer_Schwarz.png", "Bauer_Schwarz.png", "Bauer_Schwarz.png", "Bauer_Schwarz.png", "Bauer_Schwarz.png", "Bauer_Schwarz.png"},
++                {"", "", "", "", "", "", "", ""},
++                {"", "", "", "", "", "", "", ""},
++                {"", "", "", "", "", "", "", ""},
++                {"", "", "", "", "", "", "", ""},
++                {"Bauer_Weiss.png", "Bauer_Weiss.png", "Bauer_Weiss.png", "Bauer_Weiss.png", "Bauer_Weiss.png", "Bauer_Weiss.png", "Bauer_Weiss.png", "Bauer_Weiss.png"},
++                {"Turm_Weiss.png", "Pferd_Weiss.png", "Laeufer_Weiss.png", "Dame_Weiss.png", "Koenig_Weiss.png", "Laeufer_Weiss.png", "Pferd_Weiss.png", "Turm_Weiss.png"}
++        };
++    }
++
+     public static void main(String[] args) {
+         SwingUtilities.invokeLater(new Runnable() {
+             public void run() {

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="567d8011-9c5a-4a3e-b0bf-963719e29b43" name="Changes" comment="GUI für das Schachbrett hinzugefügt.">
+      <change beforePath="$PROJECT_DIR$/out/production/ChessGame3.0/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChessGame3.0/board/Board.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChessGame3.0/board/Move.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChessGame3.0/board/Spot.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChessGame3.0/common/ChessGame.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChessGame3.0/common/PieceColor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChessGame3.0/common/PiecesMetadata.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChessGame3.0/common/Player.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChessGame3.0/common/SingletonScanner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChessGame3.0/dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChessGame3.0/gamestate/CheckMateState.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChessGame3.0/gamestate/CheckState.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChessGame3.0/gamestate/GameStateCheck.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChessGame3.0/gamestate/GameStateChecker.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChessGame3.0/gamestate/StaleMateState.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChessGame3.0/gamestate/StateChecker.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChessGame3.0/gamestate/StateInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChessGame3.0/movehandlers/CastlingMoveHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChessGame3.0/movehandlers/EnPassantMoveHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChessGame3.0/movehandlers/IMoveHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChessGame3.0/movehandlers/MoveHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChessGame3.0/movehandlers/PromotionMoveHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChessGame3.0/movehandlers/RegularMoveHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChessGame3.0/pieces/Bishop.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChessGame3.0/pieces/King.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChessGame3.0/pieces/Knight.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChessGame3.0/pieces/Pawn.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChessGame3.0/pieces/Piece.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChessGame3.0/pieces/PieceFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChessGame3.0/pieces/Queen.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChessGame3.0/pieces/Rook.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Kolibri79&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="3155309c-de3c-4736-bfc6-cc109add52f1" />
+        <option name="url" value="https://github.com/commfortablyDumb/SWE-das-Zweite.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2aotRRgs0pW731CIN1eKqN0sSaA" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "android.gradle.sync.needed": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "jdk.selected.JAVA_MODULE": "16",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Jan Kolberg\IdeaProjects\SWE-das-Zweite\_2_applicationCode\src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="16" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="SWE-das-Zweite" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main_GUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main_GUI" />
+      <module name="_2_applicationCode" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="SWE-das-Zweite" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="SWE-das-Zweite" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Main_GUI" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="567d8011-9c5a-4a3e-b0bf-963719e29b43" name="Changes" comment="" />
+      <created>1704996750518</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1704996750518</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Depändency hinzugefügt">
+      <option name="closed" value="true" />
+      <created>1705948441022</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1705948441022</updated>
+    </task>
+    <task id="LOCAL-00002" summary="GUI für das Schachbrett hinzugefügt.">
+      <option name="closed" value="true" />
+      <created>1711441115778</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1711441115778</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Depändency hinzugefügt" />
+    <MESSAGE value="GUI für das Schachbrett hinzugefügt." />
+    <option name="LAST_COMMIT_MESSAGE" value="GUI für das Schachbrett hinzugefügt." />
+  </component>
+</project>
