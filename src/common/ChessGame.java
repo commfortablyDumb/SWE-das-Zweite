@@ -91,13 +91,13 @@ public class ChessGame {
     }
 
     private Move getPlayerInput(Player player) {
-        System.out.print("\nEnter next move (" + player.getColor() + " player): (move + common Position + new Position)");
+        System.out.print("\nEnter next move (" + player.getColor() + " player, format:<current pos.> <new pos.>): ");
         Scanner scan = SingletonScanner.getBoard();
         String command = scan.nextLine();
         command = command.toLowerCase();
-        if (command.matches("move [a-h][1-8] [a-h][1-8]")) {
+        if (command.matches("[a-h][1-8] [a-h][1-8]")) {
             String[] parts = command.split(" ");
-            return new Move(parseCoordinates(parts[1]), parseCoordinates(parts[2]));
+            return new Move(parseCoordinates(parts[0]), parseCoordinates(parts[1]));
         } else {
             System.out.println("Invalid input format, try again");
             return getPlayerInput(player);
