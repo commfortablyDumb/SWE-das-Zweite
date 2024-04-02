@@ -1,5 +1,9 @@
 package board;
 
+/*
+In dieser Klasse geht es darum die Züge umzusetzten.
+Durch Spot kann der jeweilige Punkt der Figur ermittelt werden.
+*/
 
 public class Move {
     private final Spot startSpot;

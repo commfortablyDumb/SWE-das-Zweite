@@ -91,7 +91,7 @@ public class ChessGame {
     }
 
     private Move getPlayerInput(Player player) {
-        System.out.print("\nEnter next move (" + player.getColor() + " player): ");
+        System.out.print("\nEnter next move (" + player.getColor() + " player): (move + common Position + new Position)");
         Scanner scan = SingletonScanner.getBoard();
         String command = scan.nextLine();
         command = command.toLowerCase();
