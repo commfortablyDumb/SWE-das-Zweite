@@ -11,9 +11,7 @@ import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.mockito.Mockito.*;
 
-//Test um die Regulären Züge zu behandeln. Läuft aktuell noch nicht korrekt
-// Fehlerkorrektur muss noch erfolgen!
-public class testRegularMoveHandler {
+public class testregularmovehandler {
 
     @Test
     void testHandleMove() {
@@ -31,16 +29,20 @@ public class testRegularMoveHandler {
 
         RegularMoveHandler handler = new RegularMoveHandler();
 
+        // Konfiguration des Mock-Verhaltens für board.movePiece(move)
+        doReturn(true).when(board).movePiece(move);
+
         // Testen des erfolgreichen Zuges
-        //when(board.movePiece(move)).thenReturn(true);
         boolean result = handler.handleMove(metadata, move);
         assertTrue(result);
 
         // Überprüfung, ob die Methode aufgerufen wurde
         verify(board).movePiece(move);
 
+        // Konfiguration des Mock-Verhaltens für den erfolglosen Zug
+        doReturn(false).when(board).movePiece(move);
+
         // Testen des erfolglosen Zuges (weil nextMoveHandler null ist)
-        //when(board.movePiece(move)).thenReturn(false);
         result = handler.handleMove(metadata, move);
         assertFalse(result);
     }

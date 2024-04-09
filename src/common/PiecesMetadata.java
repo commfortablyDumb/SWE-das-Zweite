@@ -9,6 +9,7 @@ import pieces.Piece;
 public class PiecesMetadata {
 
     private Board board = Board.getBoard();
+
     // does the piece have any available moves
     public boolean canPieceMove(Spot pieceSpot, PieceColor color) {
         if (board.isSpotEmpty(pieceSpot))
