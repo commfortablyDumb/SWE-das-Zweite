@@ -1,7 +1,10 @@
 package gamestate;
 
-import board.*;
-import common.*;
+import board.Board;
+import board.Move;
+import board.Spot;
+import common.PieceColor;
+import common.PiecesMetadata;
 
 public class CheckMateState implements GameStateCheck {
 

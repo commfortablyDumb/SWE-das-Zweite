@@ -1,10 +1,16 @@
 package movehandlers;
 
-import board.*;
-import common.*;
-import pieces.*;
+import board.Board;
+import board.Move;
+import board.Spot;
+import common.PiecesMetadata;
+import pieces.King;
+import pieces.Piece;
+import pieces.Rook;
 
 public class CastlingMoveHandler extends MoveHandler {
+
+    //ausführen des Zuges
     @Override
     public boolean handleMove(PiecesMetadata metadata, Move move) {
         if (isCastlingMove(metadata, move)) {
@@ -27,6 +33,7 @@ public class CastlingMoveHandler extends MoveHandler {
             return false;
     }
 
+    //Prüfen ob Castlen möglich ist
     private boolean isCastlingMove(PiecesMetadata metadata, Move move) {
         Board board = Board.getBoard();
 

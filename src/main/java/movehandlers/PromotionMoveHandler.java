@@ -1,8 +1,14 @@
 package movehandlers;
 
-import board.*;
-import common.*;
-import pieces.*;
+import board.Board;
+import board.Move;
+import board.Spot;
+import common.PieceColor;
+import common.PiecesMetadata;
+import common.SingletonScanner;
+import pieces.Pawn;
+import pieces.Piece;
+import pieces.PieceFactory;
 
 import java.util.Scanner;
 

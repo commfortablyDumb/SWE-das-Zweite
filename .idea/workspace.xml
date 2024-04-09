@@ -4,6 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="567d8011-9c5a-4a3e-b0bf-963719e29b43" name="Changes" comment="Update des Repositories">
       <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
@@ -44,11 +45,23 @@
       <change beforePath="$PROJECT_DIR$/src/pieces/PieceFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pieces/PieceFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pieces/Queen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pieces/Queen.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pieces/Rook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pieces/Rook.java" afterDir="false" />
+=======
+    <list default="true" id="567d8011-9c5a-4a3e-b0bf-963719e29b43" name="Changes" comment="Es wurden 2 Unit-Tests hinzugefuegt, Kommentare ergänzt und verbessert und nicht funktionsabhängige kleinigkeiten verändert.">
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/mockito_all.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/mockito_all.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SWE-das-Zweite.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SWE-das-Zweite.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SWE-das-Zweite/common/PiecesMetadata.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SWE-das-Zweite/common/PiecesMetadata.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/PiecesMetadata.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/PiecesMetadata.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/testRegularMoveHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/testregularmovehandler.java" afterDir="false" />
+>>>>>>> 33501d72375113aed6bfbd2b00397e9f5ad45ea6
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
@@ -104,6 +117,10 @@
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -111,12 +128,16 @@
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "16",
-    "last_opened_file_path": "C:/Users/Luit Düringer/Documents/studium/dhbw/05_Semester/swe/advanced/repo/SWE-das-Zweite",
+    "last_opened_file_path": "C:/Users/Jan Kolberg",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "run.code.analysis.last.selected.profile": "pProject Default",
+<<<<<<< HEAD
     "settings.editor.selected.configurable": "preferences.pluginManager"
+=======
+    "settings.editor.selected.configurable": "Errors"
+>>>>>>> 33501d72375113aed6bfbd2b00397e9f5ad45ea6
   }
 }]]></component>
   <component name="RecentsManager">
@@ -124,7 +145,7 @@
       <recent name="C:\Users\Jan Kolberg\IdeaProjects\SWE-das-Zweite\_2_applicationCode\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.testregularmovehandler">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="16" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -141,8 +162,67 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="testPieceFactory.testCreatePiece" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SWE-das-Zweite" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.testPieceFactory" />
+      <option name="METHOD_NAME" value="testCreatePiece" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="testregularmovehandler" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SWE-das-Zweite" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.testregularmovehandler" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="testregularmovehandler.testHandleMove" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SWE-das-Zweite" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="16" />
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.testregularmovehandler" />
+      <option name="METHOD_NAME" value="testHandleMove" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.Main_GUI" />
+      <item itemvalue="JUnit.testPieceFactory.testCreatePiece" />
+      <item itemvalue="JUnit.testregularmovehandler" />
+      <item itemvalue="JUnit.testregularmovehandler.testHandleMove" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.testregularmovehandler" />
+        <item itemvalue="JUnit.testregularmovehandler.testHandleMove" />
+        <item itemvalue="JUnit.testPieceFactory.testCreatePiece" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main_GUI" />
       </list>
@@ -189,7 +269,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712066118571</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Es wurden 2 Unit-Tests hinzugefuegt, Kommentare ergänzt und verbessert und nicht funktionsabhängige kleinigkeiten verändert.">
+      <option name="closed" value="true" />
+      <created>1712647279227</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1712647279227</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -208,7 +296,8 @@
     <MESSAGE value="Depändency hinzugefügt" />
     <MESSAGE value="GUI für das Schachbrett hinzugefügt." />
     <MESSAGE value="Update des Repositories" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update des Repositories" />
+    <MESSAGE value="Es wurden 2 Unit-Tests hinzugefuegt, Kommentare ergänzt und verbessert und nicht funktionsabhängige kleinigkeiten verändert." />
+    <option name="LAST_COMMIT_MESSAGE" value="Es wurden 2 Unit-Tests hinzugefuegt, Kommentare ergänzt und verbessert und nicht funktionsabhängige kleinigkeiten verändert." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

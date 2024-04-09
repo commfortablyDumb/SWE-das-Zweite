@@ -1,7 +1,7 @@
 package pieces;
 
-import board.Move;
 import board.Board;
+import board.Move;
 import board.Spot;
 import common.PieceColor;
 
@@ -11,6 +11,7 @@ public class Bishop extends Piece {
         super("Bishop", color);
     }
 
+    //Hier wird geprüft, ob ein Zug möglich ist.
     @Override
     public boolean isMoveValid(Move move) {
         Board board = Board.getBoard();

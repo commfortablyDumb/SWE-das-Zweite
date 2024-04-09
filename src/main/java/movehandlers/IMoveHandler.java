@@ -1,7 +1,7 @@
 package movehandlers;
 
-import board.*;
-import common.*;
+import board.Move;
+import common.PiecesMetadata;
 
 public interface IMoveHandler {
     void setNext(IMoveHandler nextMoveHandler);

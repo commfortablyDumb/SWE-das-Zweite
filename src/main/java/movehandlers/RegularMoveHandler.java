@@ -1,8 +1,8 @@
 package movehandlers;
 
-import board.Move;
 import board.Board;
-import common.*;
+import board.Move;
+import common.PiecesMetadata;
 
 public class RegularMoveHandler extends MoveHandler {
     @Override

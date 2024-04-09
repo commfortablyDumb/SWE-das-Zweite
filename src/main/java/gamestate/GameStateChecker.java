@@ -1,6 +1,7 @@
 package gamestate;
 
-import common.*;
+import common.PieceColor;
+import common.PiecesMetadata;
 
 import java.util.List;
 
