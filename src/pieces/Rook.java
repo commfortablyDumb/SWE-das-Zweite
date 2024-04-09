@@ -1,7 +1,7 @@
 package pieces;
 
-import board.Move;
 import board.Board;
+import board.Move;
 import board.Spot;
 import common.PieceColor;
 

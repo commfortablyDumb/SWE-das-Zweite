@@ -1,8 +1,12 @@
 package movehandlers;
 
-import board.*;
-import common.*;
-import pieces.*;
+import board.Board;
+import board.Move;
+import board.Spot;
+import common.PieceColor;
+import common.PiecesMetadata;
+import pieces.Pawn;
+import pieces.Piece;
 
 public class EnPassantMoveHandler extends MoveHandler {
     @Override

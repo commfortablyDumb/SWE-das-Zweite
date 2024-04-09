@@ -1,7 +1,8 @@
 package board;
 
 import common.PieceColor;
-import pieces.*;
+import pieces.Piece;
+import pieces.PieceFactory;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -55,7 +56,6 @@ public class Board {
         tempPiece.pieceGotMoved();
         if (!isSpotEmpty(move.getEndSpot()))
             capturePiece(move.getEndSpot());
-
         setPiece(tempPiece, move.getEndSpot());
         resetTile(move.getStartSpot());
     }

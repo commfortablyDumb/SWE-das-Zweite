@@ -2,7 +2,8 @@ package gamestate;
 
 import board.Board;
 import board.Spot;
-import common.*;
+import common.PieceColor;
+import common.PiecesMetadata;
 
 
 public class CheckState implements GameStateCheck {

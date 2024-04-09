@@ -5,18 +5,57 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="567d8011-9c5a-4a3e-b0bf-963719e29b43" name="Changes" comment="Update des Repositories">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/mockito_all.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tests/testPieceFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tests/testRegularMoveHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_02_04_2024_10_58__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_02_04_2024_10_58__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_02_04_2024_10_58__Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_02_04_2024_10_58__Changes_1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChessGame3.0.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SWE-das-Zweite.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SWE-das-Zweite.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SWE-das-Zweite/board/Board.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SWE-das-Zweite/board/Board.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SWE-das-Zweite/common/ChessGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SWE-das-Zweite/common/ChessGame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SWE-das-Zweite/common/PiecesMetadata.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SWE-das-Zweite/common/PiecesMetadata.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SWE-das-Zweite/gamestate/CheckMateState.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SWE-das-Zweite/gamestate/CheckMateState.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SWE-das-Zweite/gamestate/CheckState.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SWE-das-Zweite/gamestate/CheckState.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SWE-das-Zweite/gamestate/GameStateChecker.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SWE-das-Zweite/gamestate/GameStateChecker.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SWE-das-Zweite/gamestate/StaleMateState.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SWE-das-Zweite/gamestate/StaleMateState.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SWE-das-Zweite/movehandlers/CastlingMoveHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SWE-das-Zweite/movehandlers/CastlingMoveHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SWE-das-Zweite/movehandlers/EnPassantMoveHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SWE-das-Zweite/movehandlers/EnPassantMoveHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SWE-das-Zweite/movehandlers/MoveHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SWE-das-Zweite/movehandlers/MoveHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SWE-das-Zweite/movehandlers/PromotionMoveHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SWE-das-Zweite/movehandlers/PromotionMoveHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SWE-das-Zweite/pieces/Bishop.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SWE-das-Zweite/pieces/Bishop.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SWE-das-Zweite/pieces/King.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SWE-das-Zweite/pieces/King.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SWE-das-Zweite/pieces/PieceFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SWE-das-Zweite/pieces/PieceFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/board/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/board/Board.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/common/ChessGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/ChessGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/PiecesMetadata.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/PiecesMetadata.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gamestate/CheckMateState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gamestate/CheckMateState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gamestate/CheckState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gamestate/CheckState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gamestate/GameStateCheck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gamestate/GameStateCheck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gamestate/GameStateChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gamestate/GameStateChecker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gamestate/StaleMateState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gamestate/StaleMateState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gamestate/StateChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gamestate/StateChecker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/movehandlers/CastlingMoveHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/movehandlers/CastlingMoveHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/movehandlers/EnPassantMoveHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/movehandlers/EnPassantMoveHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/movehandlers/IMoveHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/movehandlers/IMoveHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/movehandlers/MoveHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/movehandlers/MoveHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/movehandlers/PromotionMoveHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/movehandlers/PromotionMoveHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/movehandlers/RegularMoveHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/movehandlers/RegularMoveHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pieces/Bishop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pieces/Bishop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pieces/King.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pieces/King.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pieces/Pawn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pieces/Pawn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pieces/Piece.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pieces/Piece.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pieces/PieceFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pieces/PieceFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pieces/Queen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pieces/Queen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pieces/Rook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pieces/Rook.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
@@ -68,31 +107,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "android.gradle.sync.needed": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "jdk.selected.JAVA_MODULE": "16",
-    "last_opened_file_path": "C:/Users/Luit Düringer/Documents/studium/dhbw/05_Semester/swe/advanced/repo/SWE-das-Zweite",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "reference.settings.project.statistic.project.settings"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;android.gradle.sync.needed&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;16&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;Errors&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Jan Kolberg\IdeaProjects\SWE-das-Zweite\_2_applicationCode\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.testPieceFactory.testCreatePiece">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="16" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -109,9 +151,59 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="testPieceFactory.testCreatePiece" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SWE-das-Zweite" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.testPieceFactory" />
+      <option name="METHOD_NAME" value="testCreatePiece" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="testRegularMoveHandler" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SWE-das-Zweite" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.testRegularMoveHandler" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="testRegularMoveHandler.testHandleMove" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SWE-das-Zweite" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.testRegularMoveHandler" />
+      <option name="METHOD_NAME" value="testHandleMove" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.testPieceFactory.testCreatePiece" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.testRegularMoveHandler.testHandleMove" />
+        <item itemvalue="JUnit.testRegularMoveHandler" />
         <item itemvalue="Application.Main_GUI" />
       </list>
     </recent_temporary>

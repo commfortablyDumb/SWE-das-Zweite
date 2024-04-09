@@ -1,7 +1,10 @@
 package common;
 
-import board.*;
-import pieces.*;
+import board.Board;
+import board.Move;
+import board.Spot;
+import pieces.King;
+import pieces.Piece;
 
 public class PiecesMetadata {
 

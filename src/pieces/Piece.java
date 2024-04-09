@@ -1,8 +1,8 @@
 package pieces;
 
-import board.Move;
 import board.Board;
-import common.*;
+import board.Move;
+import common.PieceColor;
 
 import java.util.Objects;
 

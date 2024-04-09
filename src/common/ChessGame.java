@@ -1,6 +1,8 @@
 package common;
 
-import board.*;
+import board.Board;
+import board.Move;
+import board.Spot;
 import gamestate.*;
 import movehandlers.*;
 import pieces.Piece;
@@ -28,6 +30,8 @@ public class ChessGame {
         checks.add(new StaleMateState());
         stateChecker = new GameStateChecker(checks);
         //move handler setup
+
+        //Hier wurde MoveHandler durch RegularMovehandler geändert, um die Funktion zu testen
         MoveHandler reg = new RegularMoveHandler();
         MoveHandler enPassant = new EnPassantMoveHandler();
         MoveHandler promotion = new PromotionMoveHandler();
