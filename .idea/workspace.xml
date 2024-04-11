@@ -4,29 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="567d8011-9c5a-4a3e-b0bf-963719e29b43" name="Changes" comment="Kleinigkeiten geändert">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/mockito_core.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/mockito_junit_jupiter.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/GUI/mainGUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/common/ChessGameWithGui.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_02_04_2024_10_58_[Changes]1/Bauer_Schwarz.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_02_04_2024_10_58_[Changes]1/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_02_04_2024_10_58__Changes_1.xml" beforeDir="false" />
+    <list default="true" id="567d8011-9c5a-4a3e-b0bf-963719e29b43" name="Changes" comment="Gui wurde erstellt, sodass Kommandozeile in GUI eingefügt wird. Dadurch wurde aber die Kommandozeile etwas umformatiert. Kann aber wie in der Ausgabe in der Kommandozeile wieder geändert werden.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SWE-das-Zweite.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SWE-das-Zweite.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/board/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/board/Board.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mainGUI.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/testPieceFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/PieceFactoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/testregularmovehandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/RegularMoveHandlerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/board/Board.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/board/Board.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/common/ChessGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/common/ChessGame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gamestate/CheckMateState.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gamestate/CheckMateState.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gamestate/CheckState.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gamestate/CheckState.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/java/dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main/java/dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mainGUI.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +96,7 @@
       <recent name="C:\Users\Jan Kolberg\IdeaProjects\SWE-das-Zweite\_2_applicationCode\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.mainGUI">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="16" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -197,10 +179,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.mainGUI" />
         <item itemvalue="JUnit.RegularMoveHandlerTest.testHandleMove" />
         <item itemvalue="JUnit.RegularMoveHandlerTest" />
-        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.PieceFactoryTest" />
       </list>
     </recent_temporary>
@@ -254,7 +236,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712647279227</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Gui wurde erstellt, sodass Kommandozeile in GUI eingefügt wird. Dadurch wurde aber die Kommandozeile etwas umformatiert. Kann aber wie in der Ausgabe in der Kommandozeile wieder geändert werden.">
+      <option name="closed" value="true" />
+      <created>1712833576228</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1712833576228</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -274,7 +264,8 @@
     <MESSAGE value="GUI für das Schachbrett hinzugefügt." />
     <MESSAGE value="Update des Repositories" />
     <MESSAGE value="Es wurden 2 Unit-Tests hinzugefuegt, Kommentare ergänzt und verbessert und nicht funktionsabhängige kleinigkeiten verändert." />
-    <option name="LAST_COMMIT_MESSAGE" value="Es wurden 2 Unit-Tests hinzugefuegt, Kommentare ergänzt und verbessert und nicht funktionsabhängige kleinigkeiten verändert." />
+    <MESSAGE value="Gui wurde erstellt, sodass Kommandozeile in GUI eingefügt wird. Dadurch wurde aber die Kommandozeile etwas umformatiert. Kann aber wie in der Ausgabe in der Kommandozeile wieder geändert werden." />
+    <option name="LAST_COMMIT_MESSAGE" value="Gui wurde erstellt, sodass Kommandozeile in GUI eingefügt wird. Dadurch wurde aber die Kommandozeile etwas umformatiert. Kann aber wie in der Ausgabe in der Kommandozeile wieder geändert werden." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

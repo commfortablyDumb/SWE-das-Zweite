@@ -144,7 +144,12 @@ public class Board {
             boardText.append("\n");
         }
 
-        mainGUI.setTextField(boardText.toString());
+        try{
+            mainGUI.setTextField(boardText.toString());
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+
 
         //Für die Kommandozeile
         System.out.println("Hier muss in der Klasse Board unter viewBoard getPieceDisplaySymbol angepasst werden, um es korrekt darzustellen");
