@@ -54,9 +54,9 @@ public class ChessGameWithGui {
 
 
     public void start() {
+        new mainGUI();
         Player currentPlayer = whitePlayer;
         Scanner scan = SingletonScanner.getBoard();
-        new mainGUI();
         StateInfo gameState = new StateInfo(0, "");
         int turnNumber = 1;
         // state codes:
