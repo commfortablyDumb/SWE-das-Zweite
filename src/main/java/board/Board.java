@@ -1,5 +1,6 @@
 package board;
 
+import GUI.mainGUI;
 import common.PieceColor;
 import pieces.Piece;
 import pieces.PieceFactory;
@@ -129,6 +130,24 @@ public class Board {
     }
 
     public void viewBoard() {
+        // Für die Darstellung im Textfeld:
+        StringBuilder boardText = new StringBuilder();
+        for (int j = 0; j < width; j++)
+            boardText.append("\t").append((char) (j + 'a')).append(" \t");
+        boardText.append("\n");
+
+        for (int i = 0; i < height; i++) {
+            boardText.append(8 - i);
+            for (int j = 0; j < width; j++) {
+                boardText.append("\t").append(getPieceDisplaySymbol(new Spot(i, j))).append("\t");
+            }
+            boardText.append("\n");
+        }
+
+        mainGUI.setTextField(boardText.toString());
+
+        //Für die Kommandozeile
+        System.out.println("Hier muss in der Klasse Board unter viewBoard getPieceDisplaySymbol angepasst werden, um es korrekt darzustellen");
         System.out.print(' ');
         for (int j = 0; j < width; j++)
             System.out.print("\t" + (char) (j + 'a') + " \t\t");
@@ -140,6 +159,8 @@ public class Board {
             System.out.print(' ');
             System.out.println();
         }
+
+
     }
 
     private String getPieceDisplaySymbol(Spot spot) {
@@ -152,6 +173,8 @@ public class Board {
                 firstChar = "b";
             return firstChar + getPiece(spot).getSymbol();
         }
-        return ". \t";
+
+        //Hier muss ein \t hinzu, um es in der Kommandozeile korrekt anzuzeigen!
+        return ".";
     }
 }

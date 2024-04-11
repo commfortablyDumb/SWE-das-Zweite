@@ -11,7 +11,9 @@ import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.mockito.Mockito.*;
 
-public class testregularmovehandler {
+
+// Funktioniert noch nicht korrekt
+public class RegularMoveHandlerTest {
 
     @Test
     void testHandleMove() {
@@ -30,10 +32,17 @@ public class testregularmovehandler {
         RegularMoveHandler handler = new RegularMoveHandler();
 
         // Konfiguration des Mock-Verhaltens für board.movePiece(move)
-        doReturn(true).when(board).movePiece(move);
+        doNothing().when(board).movePiece(move);
+        //doReturn(true).when(board).movePiece(move);
 
         // Testen des erfolgreichen Zuges
-        boolean result = handler.handleMove(metadata, move);
+        boolean result = false;
+        try {
+            handler.handleMove(metadata, move);
+            result = true;
+        } catch (Exception e) {
+            System.out.println("Eine Ausnahme ist aufgetreten: " + e.getMessage());
+        }
         assertTrue(result);
 
         // Überprüfung, ob die Methode aufgerufen wurde

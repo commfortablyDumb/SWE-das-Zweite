@@ -4,56 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-<<<<<<< HEAD
-    <list default="true" id="567d8011-9c5a-4a3e-b0bf-963719e29b43" name="Changes" comment="Update des Repositories">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mainGUI.java" afterDir="false" />
+    <list default="true" id="567d8011-9c5a-4a3e-b0bf-963719e29b43" name="Changes" comment="Kleinigkeiten geändert">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/mockito_core.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/mockito_junit_jupiter.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/GUI/mainGUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/common/ChessGameWithGui.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_02_04_2024_10_58_[Changes]1/Bauer_Schwarz.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_02_04_2024_10_58_[Changes]1/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_02_04_2024_10_58__Changes_1.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SWE-das-Zweite.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SWE-das-Zweite.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/board/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/board/Board.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/board/Move.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/board/Move.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/board/Spot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/board/Spot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/ChessGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/ChessGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/PieceColor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/PieceColor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/PiecesMetadata.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/PiecesMetadata.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/SingletonScanner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/SingletonScanner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gamestate/CheckMateState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gamestate/CheckMateState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gamestate/CheckState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gamestate/CheckState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gamestate/GameStateCheck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gamestate/GameStateCheck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gamestate/GameStateChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gamestate/GameStateChecker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gamestate/StaleMateState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gamestate/StaleMateState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gamestate/StateChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gamestate/StateChecker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gamestate/StateInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gamestate/StateInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/movehandlers/CastlingMoveHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/movehandlers/CastlingMoveHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/movehandlers/EnPassantMoveHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/movehandlers/EnPassantMoveHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/movehandlers/IMoveHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/movehandlers/IMoveHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/movehandlers/MoveHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/movehandlers/MoveHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/movehandlers/PromotionMoveHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/movehandlers/PromotionMoveHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/movehandlers/RegularMoveHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/movehandlers/RegularMoveHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pieces/Bishop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pieces/Bishop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pieces/King.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pieces/King.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pieces/Knight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pieces/Knight.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pieces/Pawn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pieces/Pawn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pieces/Piece.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pieces/Piece.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pieces/PieceFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pieces/PieceFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pieces/Queen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pieces/Queen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pieces/Rook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pieces/Rook.java" afterDir="false" />
-=======
-    <list default="true" id="567d8011-9c5a-4a3e-b0bf-963719e29b43" name="Changes" comment="Es wurden 2 Unit-Tests hinzugefuegt, Kommentare ergänzt und verbessert und nicht funktionsabhängige kleinigkeiten verändert.">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/mockito_all.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/mockito_all.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SWE-das-Zweite.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SWE-das-Zweite.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SWE-das-Zweite/common/PiecesMetadata.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SWE-das-Zweite/common/PiecesMetadata.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/PiecesMetadata.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/PiecesMetadata.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/testRegularMoveHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/testregularmovehandler.java" afterDir="false" />
->>>>>>> 33501d72375113aed6bfbd2b00397e9f5ad45ea6
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/board/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/board/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mainGUI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/testPieceFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/PieceFactoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/testregularmovehandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/RegularMoveHandlerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/board/Board.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/board/Board.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/common/ChessGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/common/ChessGame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gamestate/CheckMateState.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gamestate/CheckMateState.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gamestate/CheckState.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gamestate/CheckState.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/java/dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main/java/dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mainGUI.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +73,7 @@
     </option>
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
@@ -133,11 +106,7 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "run.code.analysis.last.selected.profile": "pProject Default",
-<<<<<<< HEAD
     "settings.editor.selected.configurable": "preferences.pluginManager"
-=======
-    "settings.editor.selected.configurable": "Errors"
->>>>>>> 33501d72375113aed6bfbd2b00397e9f5ad45ea6
   }
 }]]></component>
   <component name="RecentsManager">
@@ -145,7 +114,7 @@
       <recent name="C:\Users\Jan Kolberg\IdeaProjects\SWE-das-Zweite\_2_applicationCode\src" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.testregularmovehandler">
+  <component name="RunManager" selected="Application.mainGUI">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="16" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -155,14 +124,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main_GUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main_GUI" />
-      <module name="_2_applicationCode" />
+    <configuration name="mainGUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="GUI.mainGUI" />
+      <module name="SWE-das-Zweite" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="testPieceFactory.testCreatePiece" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PieceFactoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SWE-das-Zweite" />
       <extension name="coverage">
         <pattern>
@@ -171,29 +140,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.testPieceFactory" />
-      <option name="METHOD_NAME" value="testCreatePiece" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="testregularmovehandler" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SWE-das-Zweite" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.testregularmovehandler" />
+      <option name="MAIN_CLASS_NAME" value="tests.PieceFactoryTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="testregularmovehandler.testHandleMove" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RegularMoveHandlerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SWE-das-Zweite" />
       <extension name="coverage">
         <pattern>
@@ -201,30 +154,54 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="ALTERNATIVE_JRE_PATH" value="16" />
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.testregularmovehandler" />
+      <option name="MAIN_CLASS_NAME" value="tests.RegularMoveHandlerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RegularMoveHandlerTest.testHandleMove" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SWE-das-Zweite" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.RegularMoveHandlerTest" />
       <option name="METHOD_NAME" value="testHandleMove" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
+      <item itemvalue="Application.mainGUI" />
       <item itemvalue="Application.Main" />
-      <item itemvalue="Application.Main_GUI" />
-      <item itemvalue="JUnit.testPieceFactory.testCreatePiece" />
-      <item itemvalue="JUnit.testregularmovehandler" />
-      <item itemvalue="JUnit.testregularmovehandler.testHandleMove" />
+      <item itemvalue="JUnit.RegularMoveHandlerTest.testHandleMove" />
+      <item itemvalue="JUnit.PieceFactoryTest" />
+      <item itemvalue="JUnit.RegularMoveHandlerTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.testregularmovehandler" />
-        <item itemvalue="JUnit.testregularmovehandler.testHandleMove" />
-        <item itemvalue="JUnit.testPieceFactory.testCreatePiece" />
+        <item itemvalue="Application.mainGUI" />
+        <item itemvalue="JUnit.RegularMoveHandlerTest.testHandleMove" />
+        <item itemvalue="JUnit.RegularMoveHandlerTest" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Main_GUI" />
+        <item itemvalue="JUnit.PieceFactoryTest" />
       </list>
     </recent_temporary>
   </component>
@@ -302,5 +279,11 @@
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
     <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/SWE_das_Zweite$Main.ic" NAME="Main Coverage Results" MODIFIED="1712827636401" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/SWE_das_Zweite$PieceFactoryTest.ic" NAME="PieceFactoryTest Coverage Results" MODIFIED="1712827052725" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>tests.*</FILTER>
+    </SUITE>
   </component>
 </project>
