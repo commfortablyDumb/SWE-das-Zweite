@@ -1,6 +1,5 @@
 package gamestate;
 
-import board.Board;
 import board.Move;
 import board.Spot;
 import common.PieceColor;
@@ -10,7 +9,7 @@ public class CheckMateState implements GameStateCheck {
 
     @Override
     public StateInfo getState(PiecesMetadata metadata, PieceColor playerColor) {
-        Board board = Board.getBoard();
+        //Board board = Board.getBoard();
 
         StateInfo stateInfo = new StateInfo(0, "");
         Spot kingSpot = metadata.findKingLocation(playerColor);
