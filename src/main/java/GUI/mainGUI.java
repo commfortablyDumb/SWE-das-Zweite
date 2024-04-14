@@ -1,7 +1,5 @@
 package GUI;
 
-import common.ChessGameWithGui;
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -11,10 +9,6 @@ public class mainGUI extends JFrame implements ActionListener {
 
     private static JTextArea textField;
     private JTextField inputField;
-
-    public static void main(String[] args) {
-        new ChessGameWithGui().start();
-    }
 
 
     public mainGUI() {
