@@ -7,7 +7,7 @@ import java.awt.event.ActionListener;
 
 public class ChessBoardGUI extends JFrame {
     private static JButton[][] buttons;
-    private JTextField textField;
+    private static JTextField textField;
     private JButton clearButton;
     private JButton submitButton;
 
@@ -25,12 +25,9 @@ public class ChessBoardGUI extends JFrame {
 
         //Button zum Bestätigen des Zuges
         submitButton = new JButton("Submit");
-        submitButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                // Hier noch die Logik hinterlegen für das Absenden der Daten
-            }
-        });
+        ButtonClickListener clickListener = new ButtonClickListener();
+        submitButton.addActionListener(clickListener);
+
         //Button zum Leeren des Textfelds
         clearButton = new JButton("Clear");
         clearButton.addActionListener(new ActionListener() {
@@ -85,27 +82,24 @@ public class ChessBoardGUI extends JFrame {
                 }
                 isWhiteSquare = !isWhiteSquare;
 
-                button.addActionListener(new ActionListener() {
-                    @Override
-                    public void actionPerformed(ActionEvent e) {
-                        JButton btn = (JButton) e.getSource();
-                        String currentText = textField.getText();
-                        String newName = null;
-                        if (!currentText.isEmpty()) {
-                            // Prüfen, ob bereits ein Name im Textfeld steht
-                            if (currentText.contains(" ")) {
-                                JOptionPane.showMessageDialog(ChessBoardGUI.this, "Bereits zwei Namen im Textfeld", "Fehler", JOptionPane.ERROR_MESSAGE);
-                                textField.setText(""); // Textfeld leeren
-                                return;
-                            }
-                            newName = currentText + " " + btn.getName();
-                        }else {
-                            newName = btn.getName();
+                button.addActionListener(e -> {
+                    JButton btn = (JButton) e.getSource();
+                    String currentText = textField.getText();
+                    String newName = null;
+                    if (!currentText.isEmpty()) {
+                        // Prüfen, ob bereits ein Name im Textfeld steht
+                        if (currentText.contains(" ")) {
+                            JOptionPane.showMessageDialog(ChessBoardGUI.this, "Bereits zwei Namen im Textfeld", "Fehler", JOptionPane.ERROR_MESSAGE);
+                            textField.setText(""); // Textfeld leeren
+                            return;
                         }
-                        textField.setText(newName);
-
-                        System.out.println("Button clicked: " + btn.getName());
+                        newName = currentText + " " + btn.getName();
+                    }else {
+                        newName = btn.getName();
                     }
+                    textField.setText(newName);
+
+                    System.out.println("Button clicked: " + btn.getName());
                 });
                 buttons[i - 1][j] = button;
                 chessboardPanel.add(button);
@@ -123,17 +117,36 @@ public class ChessBoardGUI extends JFrame {
 
     public static void setButtonText(int i, int j, String text){
         buttons[i][j].setText(text);
-        buttons[1][7].setBackground(Color.red);
-
-        System.out.println(i + " " + j + buttons[i][j].getName());
+        //System.out.println(i + " " + j + buttons[i][j].getName());
 
     }
 
-    public static void main(String[] args) {
-        SwingUtilities.invokeLater(new Runnable() {
-            public void run() {
-                new ChessBoardGUI();
+    public static String getInput(){
+        return textField.getText();
+    }
+
+    private static boolean buttonClicked = false;
+    public static void waitForButtonClicked(){
+        while (!buttonClicked) {
+            try {
+                Thread.sleep(100); // Kurze Pause, um die CPU zu entlasten
+            } catch (InterruptedException e) {
+                e.printStackTrace();
             }
-        });
+        }
     }
+
+    public static void setButtonUnClicked(){
+        textField.setText("");
+        buttonClicked = false;
+
+    }
+    static class ButtonClickListener implements ActionListener {
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            buttonClicked = true;
+        }
+    }
+
+
 }

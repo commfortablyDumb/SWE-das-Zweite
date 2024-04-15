@@ -8,6 +8,7 @@ import gamestate.*;
 import movehandlers.*;
 import pieces.Piece;
 
+import javax.swing.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -86,6 +87,7 @@ public class ChessGameWithGuiNew {
         if (board.isSpotEmpty(startSpot)
                 || !board.getPiece(startSpot).getColor().equals(player.getColor())
                 || !moveHandler.handleMove(metadata, move)) {
+            JOptionPane.showMessageDialog(null, "Invalid move, try again");
             System.out.println("Invalid move, try again");
             playTurn(player);
         } else {
@@ -98,14 +100,18 @@ public class ChessGameWithGuiNew {
     }
 
     private Move getPlayerInput(Player player) {
+        JOptionPane.showMessageDialog(null, "\n" + player.getColor() +", Enter next move ");
         System.out.print("\nEnter next move (" + player.getColor() + " player, format:<current pos.> <new pos.>): ");
-        Scanner scan = SingletonScanner.getBoard();
-        String command = scan.nextLine();
+        //Scanner scan = SingletonScanner.getBoard();
+        ChessBoardGUI.waitForButtonClicked();
+        String command = ChessBoardGUI.getInput();
         command = command.toLowerCase();
+        ChessBoardGUI.setButtonUnClicked();
         if (command.matches("[a-h][1-8] [a-h][1-8]")) {
             String[] parts = command.split(" ");
             return new Move(parseCoordinates(parts[0]), parseCoordinates(parts[1]));
         } else {
+            JOptionPane.showMessageDialog(null, "Invalid input format, try again");
             System.out.println("Invalid input format, try again");
             return getPlayerInput(player);
         }
