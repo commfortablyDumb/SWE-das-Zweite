@@ -44,16 +44,6 @@ public class ChessGameWithGuiNew {
         moveHandler = castling;
     }
 
-    public ChessGameWithGuiNew(Player whitePlayer, Player blackPlayer, PiecesMetadata metadata, IMoveHandler moveHandler, StateChecker stateChecker) {
-        this.whitePlayer = whitePlayer;
-        this.blackPlayer = blackPlayer;
-        this.board = Board.getBoard();
-        this.metadata = metadata;
-        this.moveHandler = moveHandler;
-        this.stateChecker = stateChecker;
-    }
-
-
     public void start() {
         new ChessBoardGUI();
         Player currentPlayer = whitePlayer;
@@ -100,7 +90,7 @@ public class ChessGameWithGuiNew {
     }
 
     private Move getPlayerInput(Player player) {
-        JOptionPane.showMessageDialog(null, "\n" + player.getColor() +", Enter next move ");
+        JOptionPane.showMessageDialog(null, "\n" + player.getColor() + ", Enter next move ");
         System.out.print("\nEnter next move (" + player.getColor() + " player, format:<current pos.> <new pos.>): ");
         //Scanner scan = SingletonScanner.getBoard();
         ChessBoardGUI.waitForButtonClicked();
@@ -142,7 +132,4 @@ public class ChessGameWithGuiNew {
         return board;
     }
 
-    public PiecesMetadata getPiecesMetadata() {
-        return metadata;
-    }
 }

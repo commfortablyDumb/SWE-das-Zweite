@@ -102,29 +102,6 @@ public class Board {
         return width;
     }
 
-    public Piece[][] getPieceHoldersCopy() {
-        PieceFactory fac = new PieceFactory();
-        Piece[][] newBoard = new Piece[height][width];
-        for (int i = 0; i < height; i++) {
-            for (int j = 0; j < width; j++) {
-                Piece tmpPiece = pieceHolders[i][j];
-                if (tmpPiece != null)
-                    newBoard[i][j] = fac.createPiece(tmpPiece.getSymbol(), tmpPiece.getColor());
-                else
-                    newBoard[i][j] = null;
-            }
-        }
-        return newBoard;
-    }
-
-    public String[][] getConfiguration() {
-        return configuration;
-    }
-
-    public List<Piece> getCapturedPieces() {
-        return capturedPieces;
-    }
-
     public void resetTile(Spot spot) {
         pieceHolders[spot.getX()][spot.getY()] = null;
     }
@@ -139,33 +116,7 @@ public class Board {
             }
         }
 
-
-
-        // Für die Darstellung im Textfeld:
-/*        StringBuilder boardText = new StringBuilder();
-        for (int j = 0; j < width; j++)
-            boardText.append("\t").append((char) (j + 'a')).append(" \t");
-        boardText.append("\n");
-
-        for (int i = 0; i < height; i++) {
-            boardText.append(8 - i);
-            for (int j = 0; j < width; j++) {
-                boardText.append("\t").append(getPieceDisplaySymbol(new Spot(i, j))).append("\t");
-            }
-            boardText.append("\n");
-        }
-
-        try{
-            mainGUI.setTextField(boardText.toString());
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-        }
-
-
-*/
-
         //Für die Kommandozeile
-        System.out.println("Hier muss in der Klasse Board unter viewBoard getPieceDisplaySymbol angepasst werden, um es korrekt darzustellen");
         System.out.print(' ');
         for (int j = 0; j < width; j++)
             System.out.print("\t" + (char) (j + 'a') + " \t\t");

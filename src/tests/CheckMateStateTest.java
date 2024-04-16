@@ -6,10 +6,11 @@ import common.PieceColor;
 import common.PiecesMetadata;
 import gamestate.CheckMateState;
 import gamestate.StateInfo;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.mockito.Mockito.*;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.when;
 public class CheckMateStateTest {
 
     @Test

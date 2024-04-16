@@ -5,10 +5,47 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="567d8011-9c5a-4a3e-b0bf-963719e29b43" name="Changes" comment="GUI wurde implementiert und getestet. Namen der Buttons stimmen und die initiale Besetzung stimmt ebenfalls">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GUI/ChessBoardGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GUI/ChessBoardGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/board/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/board/Board.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/common/ChessGameWithGuiNew.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/ChessGameWithGuiNew.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/CheckMateStateTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/CheckMateStateTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/CheckStateTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/CheckStateTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/GUI/mainGUI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/board/Board.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/board/Move.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/board/Spot.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/common/ChessGame.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/common/ChessGameWithGui.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/common/PieceColor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/common/PiecesMetadata.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/common/Player.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/common/SingletonScanner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gamestate/CheckMateState.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gamestate/CheckState.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gamestate/GameStateCheck.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gamestate/GameStateChecker.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gamestate/StaleMateState.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gamestate/StateChecker.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gamestate/StateInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/movehandlers/CastlingMoveHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/movehandlers/EnPassantMoveHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/movehandlers/IMoveHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/movehandlers/MoveHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/movehandlers/PromotionMoveHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/movehandlers/RegularMoveHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pieces/Bishop.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pieces/King.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pieces/Knight.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pieces/Pawn.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pieces/Piece.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pieces/PieceFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pieces/Queen.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pieces/Rook.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tests/PieceFactoryTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tests/RegularMoveHandlerTest.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
