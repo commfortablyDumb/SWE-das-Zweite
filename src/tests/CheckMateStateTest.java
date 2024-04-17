@@ -18,7 +18,7 @@ public class CheckMateStateTest {
         // Mocks erstellen
         PiecesMetadata metadata = mock(PiecesMetadata.class);
         PieceColor playerColor = PieceColor.WHITE;
-        StateInfo stateInfo = new StateInfo(0, "");
+        //StateInfo stateInfo = new StateInfo(0, "");
 
         // Königsposition festlegen
         Spot kingSpot = new Spot(4, 4);

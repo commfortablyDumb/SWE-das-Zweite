@@ -6,28 +6,18 @@ import board.Spot;
 import common.PieceColor;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.mockito.Mock;
 import pieces.Piece;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
 
 class PieceTest {
-    @Mock
-    private Move move;
 
-    @Mock
-    private Spot spot;
-
-
-    private Piece piece;
-
-    private
+    Piece piece = mock(Piece.class);
 
     @BeforeEach
-    void setUp() {
-
-        piece = new Piece("P", PieceColor.WHITE) {};
+    public void setUp() {
+        piece = new Piece("Pawn", PieceColor.WHITE) {};
 
     }
 
@@ -36,29 +26,27 @@ class PieceTest {
 
         Board board = mock(Board.class);
         //board = Board.getBoard();
-
+/*
         Spot startSpotMock = mock(Spot.class);
         Spot endSpotMock = mock(Spot.class);
 
-        // Definieren des Verhaltens der Spot-Mocks
-        when(startSpotMock.getX()).thenReturn(2);
-        when(startSpotMock.getY()).thenReturn(2);
-        when(endSpotMock.getX()).thenReturn(5);
-        when(endSpotMock.getY()).thenReturn(5);
+        when(startSpotMock.getX()).thenReturn(1);
+        when(startSpotMock.getY()).thenReturn(1);
+        when(endSpotMock.getX()).thenReturn(1);
+        when(endSpotMock.getY()).thenReturn(3);
 
-        // Mock-Objekt für Move erstellen und den Konstruktor aufrufen
-        Move moveMock = new Move(startSpotMock, endSpotMock);
+        Move move = new Move(startSpotMock, endSpotMock);
+        */
 
-        boolean outOfRange = board.isOutOfRange(moveMock);
-        boolean isSpotEmpty = board.isSpotEmpty(endSpotMock);
+        Move mockMove = mock(Move.class);
+        when(mockMove.getEndSpot()).thenReturn(new Spot(1,1));
+        when(mockMove.getStartSpot()).thenReturn(new Spot(1,3));
 
-        when(board.isOutOfRange(moveMock)).thenReturn(false);
+        when(board.isOutOfRange(mockMove)).thenReturn(false);
         when(board.isSpotEmpty(any())).thenReturn(false);
 
-        // Act
-        boolean isValid = piece.isMoveValid(new Move(new Spot(1,1), new Spot(5,5)));
+        boolean isValid = piece.isMoveValid(mockMove);
 
-        // Assert
         assertTrue(isValid);
     }
 
@@ -81,7 +69,7 @@ class PieceTest {
 
     @Test
     void testAccessors() {
-        assertEquals("P", piece.getSymbol(), "Symbol should match constructor input");
+        assertEquals("Pawn", piece.getSymbol(), "Symbol should match constructor input");
         assertEquals(PieceColor.WHITE, piece.getColor(), "Color should match constructor input");
     }
 } 
