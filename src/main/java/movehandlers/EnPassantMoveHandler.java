@@ -1,5 +1,6 @@
 package movehandlers;
 
+import abstraction.MathFunctions;
 import board.Board;
 import board.Move;
 import board.Spot;
@@ -42,7 +43,7 @@ public class EnPassantMoveHandler extends MoveHandler {
             side = -1;
         else side = 1;
         //check diagonal movement
-        if (xDistance != side || Math.abs(yDistance) != 1 || !board.isSpotEmpty(endSpot))
+        if (xDistance != side || MathFunctions.abs(yDistance) != 1 || !board.isSpotEmpty(endSpot))
             return false;
         //check if move is in range
         if (board.isOutOfRange(startSpot.getX(), endSpot.getY()))

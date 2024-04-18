@@ -1,5 +1,6 @@
 package pieces;
 
+import abstraction.MathFunctions;
 import board.Board;
 import board.Move;
 import board.Spot;
@@ -26,13 +27,13 @@ public class Rook extends Piece {
         //vertical movement check
         if (xDistance != 0 && yDistance == 0) {
             int direction = xDistance > 0 ? 1 : -1;
-            for (int i = 1; i < Math.abs(xDistance); i++)
+            for (int i = 1; i < MathFunctions.abs(xDistance); i++)
                 if (!board.isSpotEmpty(new Spot(startSpot.getX() + i * direction, startSpot.getY())))
                     canMove = false;
         } else //horizontal movement check
             if (xDistance == 0 && yDistance != 0) {
                 int direction = yDistance > 0 ? 1 : -1;
-                for (int i = 1; i < Math.abs(yDistance); i++)
+                for (int i = 1; i < MathFunctions.abs(yDistance); i++)
                     if (!board.isSpotEmpty(new Spot(startSpot.getX(), startSpot.getY() + i * direction)))
                         canMove = false;
             } else

@@ -1,5 +1,6 @@
 package pieces;
 
+import abstraction.MathFunctions;
 import board.Move;
 import board.Spot;
 import common.PieceColor;
@@ -17,8 +18,8 @@ public class King extends Piece{
         Spot startSpot = move.getStartSpot();
         Spot endSpot = move.getEndSpot();
 
-        int xDistance = Math.abs(endSpot.getX() - startSpot.getX());
-        int yDistance = Math.abs(endSpot.getY() - startSpot.getY());
+        int xDistance = MathFunctions.abs(endSpot.getX() - startSpot.getX());
+        int yDistance = MathFunctions.abs(endSpot.getY() - startSpot.getY());
 
         return xDistance <= 1 && yDistance <= 1;
     }

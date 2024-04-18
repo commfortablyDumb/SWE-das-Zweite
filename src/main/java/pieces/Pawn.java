@@ -1,5 +1,6 @@
 package pieces;
 
+import abstraction.MathFunctions;
 import board.Board;
 import board.Move;
 import board.Spot;
@@ -30,7 +31,7 @@ public class Pawn extends Piece {
         if (xDistance == 2 * side && yDistance == 0 && board.isSpotEmpty(new Spot(startSpot.getX() + side, startSpot.getY()))
                 && !board.getPiece(startSpot).hasBeenMoved())
             return true;
-        if (xDistance == side && Math.abs(yDistance) == 1 && !board.isSpotEmpty(endSpot))
+        if (xDistance == side && MathFunctions.abs(yDistance) == 1 && !board.isSpotEmpty(endSpot))
             return true;
 
         return false;

@@ -1,5 +1,6 @@
 package pieces;
 
+import abstraction.MathFunctions;
 import board.Move;
 import board.Spot;
 import common.PieceColor;
@@ -22,6 +23,6 @@ public class Knight extends Piece {
         int xDistance = endSpot.getX() - startSpot.getX();
         int yDistance = endSpot.getY() - startSpot.getY();
 
-        return Math.abs(xDistance * yDistance) == 2;
+        return MathFunctions.abs(xDistance * yDistance) == 2;
     }
 }
