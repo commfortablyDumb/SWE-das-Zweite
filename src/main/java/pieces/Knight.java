@@ -2,7 +2,7 @@ package pieces;
 
 import abstraction.MathFunctions;
 import board.Move;
-import board.Spot;
+import abstraction.Spot;
 import common.PieceColor;
 
 public class Knight extends Piece {

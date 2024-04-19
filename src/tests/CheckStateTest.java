@@ -1,6 +1,6 @@
 package tests;
 
-import board.Spot;
+import abstraction.Spot;
 import common.PieceColor;
 import common.PiecesMetadata;
 import gamestate.CheckState;

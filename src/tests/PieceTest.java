@@ -2,7 +2,7 @@ package tests;
 
 import board.Board;
 import board.Move;
-import board.Spot;
+import abstraction.Spot;
 import common.PieceColor;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

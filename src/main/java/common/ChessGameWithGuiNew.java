@@ -3,7 +3,7 @@ package common;
 import GUI.ChessBoardGUI;
 import board.Board;
 import board.Move;
-import board.Spot;
+import abstraction.Spot;
 import gamestate.*;
 import movehandlers.*;
 import pieces.Piece;
@@ -55,7 +55,7 @@ public class ChessGameWithGuiNew {
         // 1: a particular state was reached but not a game ending one (check)
         // 2: game ending state reached (checkmate, draw)
         while (gameState.getStateCode() <= 1) {
-            System.out.println("TURN " + turnNumber);
+            System.out.println("TURN " + turnNumber++);
             System.out.println(currentPlayer.getColor() + " player's turn");
             board.viewBoard();
             playTurn(currentPlayer);
@@ -77,8 +77,9 @@ public class ChessGameWithGuiNew {
         if (board.isSpotEmpty(startSpot)
                 || !board.getPiece(startSpot).getColor().equals(player.getColor())
                 || !moveHandler.handleMove(metadata, move)) {
-            JOptionPane.showMessageDialog(null, "Invalid move, try again");
-            System.out.println("Invalid move, try again");
+            String message = "Invalid move, try again";
+            JOptionPane.showMessageDialog(null, message);
+            System.out.println(message);
             playTurn(player);
         } else {
             StateInfo gameState = stateChecker.checkIllegalStates(metadata, player.getColor());
@@ -91,7 +92,7 @@ public class ChessGameWithGuiNew {
 
     private Move getPlayerInput(Player player) {
         JOptionPane.showMessageDialog(null, "\n" + player.getColor() + ", Enter next move ");
-        System.out.print("\nEnter next move (" + player.getColor() + " player, format:<current pos.> <new pos.>): ");
+        //System.out.print("\nEnter next move (" + player.getColor() + " player, format:<current pos.> <new pos.>): ");
         //Scanner scan = SingletonScanner.getBoard();
         ChessBoardGUI.waitForButtonClicked();
         String command = ChessBoardGUI.getInput();

@@ -2,7 +2,7 @@ package pieces;
 
 import abstraction.MathFunctions;
 import board.Board;
-import board.Spot;
+import abstraction.Spot;
 
 public class canMove {
     Board board;
@@ -43,13 +43,14 @@ public class canMove {
     public boolean canMoveDiagonal() {
         int verticalDirection = xDistance > 0 ? 1 : -1;
         int horizontalDirection = yDistance > 0 ? 1 : -1;
+        boolean canMove = true;
 
         for (int i = 1; i < MathFunctions.abs(xDistance); i++) {
             int x = startSpot.getX() + i * verticalDirection;
             int y = startSpot.getY() + i * horizontalDirection;
             if (!board.isSpotEmpty(new Spot(x, y)))
-                return false;
+                canMove = false;
         }
-        return true;
+        return canMove;
     }
 }

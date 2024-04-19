@@ -2,7 +2,7 @@ package movehandlers;
 
 import board.Board;
 import board.Move;
-import board.Spot;
+import abstraction.Spot;
 import common.PiecesMetadata;
 import pieces.King;
 import pieces.Piece;

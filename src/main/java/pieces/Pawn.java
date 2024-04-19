@@ -3,7 +3,7 @@ package pieces;
 import abstraction.MathFunctions;
 import board.Board;
 import board.Move;
-import board.Spot;
+import abstraction.Spot;
 import common.PieceColor;
 
 public class Pawn extends Piece {

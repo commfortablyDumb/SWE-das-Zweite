@@ -1,9 +1,8 @@
 package pieces;
 
-import abstraction.MathFunctions;
+import abstraction.Spot;
 import board.Board;
 import board.Move;
-import board.Spot;
 import common.PieceColor;
 
 public class Rook extends Piece {
@@ -22,20 +21,15 @@ public class Rook extends Piece {
 
         int xDistance = endSpot.getX() - startSpot.getX();
         int yDistance = endSpot.getY() - startSpot.getY();
+        canMove check = new canMove(board, startSpot, xDistance, yDistance);
 
         boolean canMove = true;
         //vertical movement check
         if (xDistance != 0 && yDistance == 0) {
-            int direction = xDistance > 0 ? 1 : -1;
-            for (int i = 1; i < MathFunctions.abs(xDistance); i++)
-                if (!board.isSpotEmpty(new Spot(startSpot.getX() + i * direction, startSpot.getY())))
-                    canMove = false;
+            canMove = check.canMoveVertical();
         } else //horizontal movement check
             if (xDistance == 0 && yDistance != 0) {
-                int direction = yDistance > 0 ? 1 : -1;
-                for (int i = 1; i < MathFunctions.abs(yDistance); i++)
-                    if (!board.isSpotEmpty(new Spot(startSpot.getX(), startSpot.getY() + i * direction)))
-                        canMove = false;
+                canMove = check.canMoveHorizontal();
             } else
                 canMove = false;
 

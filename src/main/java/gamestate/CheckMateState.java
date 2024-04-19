@@ -1,7 +1,7 @@
 package gamestate;
 
 import board.Move;
-import board.Spot;
+import abstraction.Spot;
 import common.PieceColor;
 import common.PiecesMetadata;
 

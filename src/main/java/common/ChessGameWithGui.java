@@ -3,7 +3,7 @@ package common;
 import GUI.mainGUI;
 import board.Board;
 import board.Move;
-import board.Spot;
+import abstraction.Spot;
 import gamestate.*;
 import movehandlers.*;
 import pieces.Piece;

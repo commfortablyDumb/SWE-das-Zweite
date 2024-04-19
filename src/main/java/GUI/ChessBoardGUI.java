@@ -10,11 +10,19 @@ public class ChessBoardGUI extends JFrame {
     private static JTextField textField;
     private JButton clearButton;
     private JButton submitButton;
+    private JTextPane statusField;
+
 
     public ChessBoardGUI() {
         super("Chess Board");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new BorderLayout());
+
+        //statusfeld für derzeitigen Spieler
+        statusField = new JTextPane();
+        statusField.setText("Test");
+        statusField.setEditable(false);
+        add(statusField, BorderLayout.NORTH);
 
         // Chessboard Panel erstellen
         JPanel chessboardPanel = createChessboardPanel();

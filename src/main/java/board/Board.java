@@ -1,6 +1,7 @@
 package board;
 
 import GUI.ChessBoardGUI;
+import abstraction.Spot;
 import common.PieceColor;
 import pieces.Piece;
 import pieces.PieceFactory;
@@ -108,28 +109,12 @@ public class Board {
 
     public void viewBoard() {
         // Für die Darstellung in der ChessBoardGui.
-        System.out.println("Hier wird die ChessBoardGui erstellt");
         String[][] buttonNames = new String[8][8];
         for (int j = 0; j < 8; j++) {
             for (int i = 0; i < 8; i++) {
                 ChessBoardGUI.setButtonText(j, i, getPieceDisplaySymbol(new Spot(j,i)));
             }
         }
-
-        //Für die Kommandozeile
-        System.out.print(' ');
-        for (int j = 0; j < width; j++)
-            System.out.print("\t" + (char) (j + 'a') + " \t\t");
-        System.out.println();
-        for (int i = 0; i < height; i++) {
-            System.out.print(8 - i);
-            for (int j = 0; j < width; j++)
-                System.out.print("\t" + getPieceDisplaySymbol(new Spot(i, j)) + "\t");
-            System.out.print(' ');
-            System.out.println();
-        }
-
-
     }
 
     private String getPieceDisplaySymbol(Spot spot) {

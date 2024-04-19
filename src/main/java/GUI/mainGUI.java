@@ -7,8 +7,9 @@ import java.awt.event.ActionListener;
 
 public class mainGUI extends JFrame implements ActionListener {
 
-    private static JTextArea textField;
+    private JTextArea chessField;
     private JTextField inputField;
+    private JTextArea statusField;
 
 
     public mainGUI() {
@@ -16,12 +17,15 @@ public class mainGUI extends JFrame implements ActionListener {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new BorderLayout());
 
-        //this.game = game;
+        //statusfeld für derzeitigen Spieler
+        statusField = new JTextArea();
+        statusField.setText("Test");
+        add(statusField, BorderLayout.NORTH);
 
         // Großes Textfeld für das Schachspiel
-        textField = new JTextArea(20, 130);
-        textField.setEditable(false);
-        JScrollPane scrollPane = new JScrollPane(textField);
+        chessField = new JTextArea(20, 130);
+        chessField.setEditable(false);
+        JScrollPane scrollPane = new JScrollPane(chessField);
         add(scrollPane, BorderLayout.CENTER);
 
         // Panel für das Eingabefeld und den Bestätigungsbutton
@@ -45,8 +49,8 @@ public class mainGUI extends JFrame implements ActionListener {
 
     }
 
-    public static void setTextField(String text){
-        textField.setText(text);
+    public void setTextField(String text){
+        chessField.setText(text);
     }
 
     @Override

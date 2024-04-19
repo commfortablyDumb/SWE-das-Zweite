@@ -1,7 +1,7 @@
 package tests;
 
 import board.Move;
-import board.Spot;
+import abstraction.Spot;
 import common.PieceColor;
 import common.PiecesMetadata;
 import gamestate.CheckMateState;

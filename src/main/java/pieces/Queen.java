@@ -3,7 +3,7 @@ package pieces;
 import abstraction.MathFunctions;
 import board.Board;
 import board.Move;
-import board.Spot;
+import abstraction.Spot;
 import common.PieceColor;
 
 public class Queen extends Piece {
@@ -17,40 +17,25 @@ public class Queen extends Piece {
         Board board = Board.getBoard();
         if (!super.isMoveValid(move))
             return false;
-
         Spot startSpot = move.getStartSpot();
         Spot endSpot = move.getEndSpot();
 
         int xDistance = endSpot.getX() - startSpot.getX();
         int yDistance = endSpot.getY() - startSpot.getY();
+        canMove check = new canMove(board, startSpot, xDistance, yDistance);
 
         boolean canMove = true;
         //vertical movement check
         if (xDistance != 0 && yDistance == 0) {
-            int direction = xDistance > 0 ? 1 : -1;
-            for (int i = 1; i < MathFunctions.abs(xDistance); i++)
-                if (!board.isSpotEmpty(new Spot(startSpot.getX() + i * direction, startSpot.getY())))
-                    canMove = false;
+            canMove = check.canMoveVertical();
         } else //horizontal movement check
             if (xDistance == 0 && yDistance != 0) {
-                int direction = yDistance > 0 ? 1 : -1;
-                for (int i = 1; i < MathFunctions.abs(yDistance); i++)
-                    if (!board.isSpotEmpty(new Spot(startSpot.getX(), startSpot.getY() + i * direction)))
-                        canMove = false;
+                canMove = check.canMoveHorizontal();
             } else //diagonal movement check
                 if (MathFunctions.abs(xDistance) == MathFunctions.abs(yDistance) && xDistance != 0) {
-                    int verticalDirection = xDistance > 0 ? 1 : -1;
-                    int horizontalDirection = yDistance > 0 ? 1 : -1;
-
-                    for (int i = 1; i < MathFunctions.abs(xDistance); i++) {
-                        int x = startSpot.getX() + i * verticalDirection;
-                        int y = startSpot.getY() + i * horizontalDirection;
-                        if (!board.isSpotEmpty(new Spot(x, y)))
-                            canMove = false;
-                    }
+                    canMove = check.canMoveDiagonal();
                 } else
                     canMove = false;
-
         return canMove;
     }
 }
