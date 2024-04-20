@@ -5,6 +5,7 @@ import common.PieceColor;
 public class PieceFactory {
     public Piece createPiece(String pieceType, PieceColor color) {
         // Prüfen, welcher Name übergeben wird und groß und Kleinschreibung ignorieren
+
         if (pieceType.equalsIgnoreCase("Pawn"))
             return new Pawn(color);
         else if (pieceType.equalsIgnoreCase("Rook"))
