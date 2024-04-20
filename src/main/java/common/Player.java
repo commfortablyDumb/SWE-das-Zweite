@@ -9,4 +9,9 @@ public class Player {
     public PieceColor getColor() {
         return color;
     }
+
+    @Override
+    public String toString() {
+        return color +"";
+    }
 }

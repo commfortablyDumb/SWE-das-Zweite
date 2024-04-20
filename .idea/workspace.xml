@@ -5,60 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="567d8011-9c5a-4a3e-b0bf-963719e29b43" name="Changes" comment="GUI wurde implementiert und getestet. Namen der Buttons stimmen und die initiale Besetzung stimmt ebenfalls">
+      <change afterPath="$PROJECT_DIR$/src/main/java/GUI/BoardListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GUI/mainGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GUI/mainGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GUI/ChessBoardGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GUI/ChessBoardGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/board/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/board/Board.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/board/Move.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/board/Move.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/board/Spot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/abstraction/Spot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/common/ChessGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/ChessGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/common/ChessGameWithGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/ChessGameWithGui.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/common/ChessGame.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/common/ChessGameWithGui.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/common/ChessGameWithGuiNew.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/ChessGameWithGuiNew.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/common/PiecesMetadata.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/PiecesMetadata.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gamestate/CheckMateState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gamestate/CheckMateState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gamestate/CheckState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gamestate/CheckState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gamestate/StaleMateState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gamestate/StaleMateState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/movehandlers/CastlingMoveHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/movehandlers/CastlingMoveHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/movehandlers/EnPassantMoveHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/movehandlers/EnPassantMoveHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/movehandlers/PromotionMoveHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/movehandlers/PromotionMoveHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pieces/Bishop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pieces/Bishop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pieces/King.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pieces/King.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pieces/Knight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pieces/Knight.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pieces/Pawn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pieces/Pawn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pieces/Queen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pieces/Queen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pieces/Rook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pieces/Rook.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pieces/canMove.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pieces/canMove.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/CheckMateStateTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/CheckMateStateTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/CheckStateTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/CheckStateTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/PieceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/PieceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/board/Board.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/board/Board.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/board/Move.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/board/Move.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/board/Spot.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/common/ChessGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/common/ChessGame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/common/ChessGameWithGui.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/common/ChessGameWithGui.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/common/ChessGameWithGuiNew.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/common/ChessGameWithGuiNew.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/common/PiecesMetadata.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/common/PiecesMetadata.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gamestate/CheckMateState.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gamestate/CheckMateState.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gamestate/CheckState.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gamestate/CheckState.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gamestate/StaleMateState.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gamestate/StaleMateState.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/movehandlers/CastlingMoveHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/movehandlers/CastlingMoveHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/movehandlers/EnPassantMoveHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/movehandlers/EnPassantMoveHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/movehandlers/PromotionMoveHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/movehandlers/PromotionMoveHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/movehandlers/RegularMoveHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/movehandlers/RegularMoveHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pieces/Bishop.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pieces/Bishop.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pieces/King.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pieces/King.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pieces/Knight.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pieces/Knight.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pieces/Pawn.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pieces/Pawn.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pieces/Piece.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pieces/Piece.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pieces/Queen.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pieces/Queen.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pieces/Rook.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pieces/Rook.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pieces/canMove.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pieces/canMove.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tests/CheckMateStateTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tests/CheckMateStateTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tests/CheckStateTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tests/CheckStateTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tests/PieceTest$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tests/PieceTest$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tests/PieceTest$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tests/PieceTest$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tests/PieceTest$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tests/PieceTest$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tests/PieceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tests/PieceTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tests/RegularMoveHandlerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tests/RegularMoveHandlerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/common/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/Player.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,6 +39,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -404,6 +360,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/pieces/Piece.java</url>
           <line>26</line>
           <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/GUI/ChessBoardGUI.java</url>
+          <line>165</line>
+          <option name="timeStamp" value="19" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

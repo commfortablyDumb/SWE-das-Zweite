@@ -1,25 +1,25 @@
 package common;
 
-import GUI.ChessBoardGUI;
+import GUI.BoardListener;
+import abstraction.Spot;
 import board.Board;
 import board.Move;
-import abstraction.Spot;
 import gamestate.*;
 import movehandlers.*;
 import pieces.Piece;
 
-import javax.swing.*;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
 
 public class ChessGameWithGuiNew {
     private final Player whitePlayer;
     private final Player blackPlayer;
+    private Player currentPlayer;
     private final Board board;
     private final PiecesMetadata metadata;
     private final IMoveHandler moveHandler;
     private final StateChecker stateChecker;
+    private BoardListener boardListener;
 
     public ChessGameWithGuiNew() {
         whitePlayer = new Player(PieceColor.WHITE);
@@ -45,9 +45,7 @@ public class ChessGameWithGuiNew {
     }
 
     public void start() {
-        new ChessBoardGUI();
-        Player currentPlayer = whitePlayer;
-        Scanner scan = SingletonScanner.getBoard();
+        currentPlayer = whitePlayer;
         StateInfo gameState = new StateInfo(0, "");
         int turnNumber = 1;
         // state codes:
@@ -57,16 +55,16 @@ public class ChessGameWithGuiNew {
         while (gameState.getStateCode() <= 1) {
             System.out.println("TURN " + turnNumber++);
             System.out.println(currentPlayer.getColor() + " player's turn");
-            board.viewBoard();
+            board.getBoardString();
             playTurn(currentPlayer);
             gameState = stateChecker.checkState(metadata, swapPlayers(currentPlayer).getColor());
             if (gameState.getStateCode() != 0)
                 System.out.println(gameState.getStateDescription());
             currentPlayer = swapPlayers(currentPlayer);
+            boardListener.updatePlayer();
             if (gameState.getStateCode() == 2)
-                board.viewBoard();
+                board.getBoardString();
         }
-        scan.close();
     }
 
     private void playTurn(Player player) {
@@ -78,7 +76,7 @@ public class ChessGameWithGuiNew {
                 || !board.getPiece(startSpot).getColor().equals(player.getColor())
                 || !moveHandler.handleMove(metadata, move)) {
             String message = "Invalid move, try again";
-            JOptionPane.showMessageDialog(null, message);
+            boardListener.showMessage(message);
             System.out.println(message);
             playTurn(player);
         } else {
@@ -91,18 +89,15 @@ public class ChessGameWithGuiNew {
     }
 
     private Move getPlayerInput(Player player) {
-        JOptionPane.showMessageDialog(null, "\n" + player.getColor() + ", Enter next move ");
-        //System.out.print("\nEnter next move (" + player.getColor() + " player, format:<current pos.> <new pos.>): ");
-        //Scanner scan = SingletonScanner.getBoard();
-        ChessBoardGUI.waitForButtonClicked();
-        String command = ChessBoardGUI.getInput();
+        boardListener.waitForButtonClicked();
+        String command = boardListener.getInput();
         command = command.toLowerCase();
-        ChessBoardGUI.setButtonUnClicked();
+        boardListener.setButtonUnClicked();
         if (command.matches("[a-h][1-8] [a-h][1-8]")) {
             String[] parts = command.split(" ");
             return new Move(parseCoordinates(parts[0]), parseCoordinates(parts[1]));
         } else {
-            JOptionPane.showMessageDialog(null, "Invalid input format, try again");
+            boardListener.showMessage("Invalid input format, try again");
             System.out.println("Invalid input format, try again");
             return getPlayerInput(player);
         }
@@ -132,5 +127,13 @@ public class ChessGameWithGuiNew {
     public Board getBoard() {
         return board;
     }
+
+    public Player getCurrentPlayer() {
+        return currentPlayer;
+    }
+    public void setGUIListener(BoardListener boardListener) {
+        this.boardListener = boardListener;
+    }
+
 
 }

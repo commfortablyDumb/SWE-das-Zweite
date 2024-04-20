@@ -1,6 +1,6 @@
 package board;
 
-import GUI.ChessBoardGUI;
+import GUI.BoardListener;
 import abstraction.Spot;
 import common.PieceColor;
 import pieces.Piece;
@@ -13,6 +13,7 @@ import java.util.NoSuchElementException;
 public class Board {
 
     private static final Board board = new Board();
+    private BoardListener listener;
     private final Piece[][] pieceHolders;
     private final int height;
     private final int width;
@@ -107,14 +108,21 @@ public class Board {
         pieceHolders[spot.getX()][spot.getY()] = null;
     }
 
-    public void viewBoard() {
+    public void getBoardString() {
         // Für die Darstellung in der ChessBoardGui.
-        String[][] buttonNames = new String[8][8];
+        String[][] boardStringCopy = new String[8][8];
         for (int j = 0; j < 8; j++) {
             for (int i = 0; i < 8; i++) {
-                ChessBoardGUI.setButtonText(j, i, getPieceDisplaySymbol(new Spot(j,i)));
+                boardStringCopy[j][i] = getPieceDisplaySymbol(new Spot(j,i));
             }
         }
+        if (listener != null) {
+            listener.onBoardChanged(boardStringCopy);
+        }
+    }
+
+    public void setBoardListener(BoardListener listener) {
+        this.listener = listener;
     }
 
     private String getPieceDisplaySymbol(Spot spot) {
