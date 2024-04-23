@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="567d8011-9c5a-4a3e-b0bf-963719e29b43" name="Changes" comment="GUI wurde implementiert und getestet. Namen der Buttons stimmen und die initiale Besetzung stimmt ebenfalls">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/board/Spot.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/common/ChessGame.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/common/ChessGameWithGui.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tests/PieceTest$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tests/PieceTest$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tests/PieceTest$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tests/PieceTest$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tests/PieceTest$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tests/PieceTest$3.class" afterDir="false" />
-    </list>
+    <list default="true" id="567d8011-9c5a-4a3e-b0bf-963719e29b43" name="Changes" comment="keine Ahnung" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,7 +36,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="NewJan" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -89,7 +81,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "android.gradle.sync.needed": "true",
-    "git-widget-placeholder": "NewJan",
+    "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "16",
     "last_opened_file_path": "C:/Users/Jan Kolberg",
@@ -315,7 +307,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713267694061</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="keine Ahnung">
+      <option name="closed" value="true" />
+      <created>1713874588868</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1713874588868</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -339,7 +339,8 @@
     <MESSAGE value="Anpassung der Main methode. aktuell muss die mainGUI() gestartet werden." />
     <MESSAGE value="Problem an der Klasse Main wurde behoben. Spiel kann mittels Main wieder gestartet werden" />
     <MESSAGE value="GUI wurde implementiert und getestet. Namen der Buttons stimmen und die initiale Besetzung stimmt ebenfalls" />
-    <option name="LAST_COMMIT_MESSAGE" value="GUI wurde implementiert und getestet. Namen der Buttons stimmen und die initiale Besetzung stimmt ebenfalls" />
+    <MESSAGE value="keine Ahnung" />
+    <option name="LAST_COMMIT_MESSAGE" value="keine Ahnung" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
