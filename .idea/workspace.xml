@@ -5,15 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="567d8011-9c5a-4a3e-b0bf-963719e29b43" name="Changes" comment="GUI wurde implementiert und getestet. Namen der Buttons stimmen und die initiale Besetzung stimmt ebenfalls">
-      <change afterPath="$PROJECT_DIR$/src/main/java/GUI/BoardListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GUI/ChessBoardGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GUI/ChessBoardGUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/board/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/board/Board.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/common/ChessGame.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/common/ChessGameWithGui.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/common/ChessGameWithGuiNew.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/ChessGameWithGuiNew.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/common/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/board/Spot.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/common/ChessGame.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/common/ChessGameWithGui.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tests/PieceTest$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tests/PieceTest$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tests/PieceTest$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tests/PieceTest$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tests/PieceTest$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tests/PieceTest$3.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,29 +77,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;android.gradle.sync.needed&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;16&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Jan Kolberg&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "android.gradle.sync.needed": "true",
+    "git-widget-placeholder": "NewJan",
+    "ignore.virus.scanning.warn.message": "true",
+    "jdk.selected.JAVA_MODULE": "16",
+    "last_opened_file_path": "C:/Users/Jan Kolberg",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Jan Kolberg\IdeaProjects\SWE-das-Zweite\_2_applicationCode\src" />
@@ -374,9 +372,19 @@
     <select />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/SWE_das_Zweite$Main.ic" NAME="Main Coverage Results" MODIFIED="1712827636401" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/SWE_das_Zweite$PieceFactoryTest.ic" NAME="PieceFactoryTest Coverage Results" MODIFIED="1712827052725" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/SWE_das_Zweite$PieceTest_testIsMoveValid.ic" NAME="PieceTest.testIsMoveValid Coverage Results" MODIFIED="1713364058994" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>tests.*</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/SWE_das_Zweite$Main.ic" NAME="Main Coverage Results" MODIFIED="1712827636401" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/SWE_das_Zweite$PieceTest.ic" NAME="PieceTest Coverage Results" MODIFIED="1713364548588" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>tests.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/SWE_das_Zweite$tests_in_SWE_das_Zweite.ic" NAME="tests in SWE-das-Zweite Coverage Results" MODIFIED="1713364370750" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>tests.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/SWE_das_Zweite$PieceFactoryTest.ic" NAME="PieceFactoryTest Coverage Results" MODIFIED="1713363892435" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>tests.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/SWE_das_Zweite$All_in_SWE_das_Zweite.ic" NAME="All in SWE-das-Zweite Coverage Results" MODIFIED="1713364615822" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
